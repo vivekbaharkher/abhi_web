@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    
+</head>
+<body>
+    <h2><i>adoptme.com</i></h2>
+   <h1>Adopt a <span>pet</span> today.</h1>
+   <br/><br/>
+   <div id="pets">
+    <div class="card">
+        <img src="dog2.jpg" alt="jerry"/>
+        <h3>Meet Jerry</h3>
+        <p>
+        Pets are a great blessing in anyone’s life. They are the only ones who love us unconditionally.
+        Pets always offer us everything they have without asking for anything in return.
+        The main aim of any pet’s life is to make their owner happy. Nowadays, even the term ‘owner’ is changing.
+        People prefer their pets as kids and to themselves as parents. This is how the relationship between pets is evolving. 
+        People treat them no less than humans. For instance, they celebrate their birthdays; get those matching outfits and more.
+        </p>
+    </div>
+    <div class="card">
+        <img src="cat.jpg" alt="tom"/>
+        <h3>Meet Tom</h3>
+        <p>
+            In my opinion, I feel the pets rightly deserve it. The most common pet you can find at anyone’s place is dogs.
+             A man’s best friend and the most faithful animal, a dog. I also have a pet dog that I love to bits.
+              We got him when he was a little baby and have watched him grow into a beautiful dog. All my family members love him with all their heart.
+               We love his silly antics and cannot imagine our lives without him. We named him Sasha.
+        </p>
+    </div>
+   </div>    
+   <style>
+    #pets{
+    display: flex;
+    justify-content: space-evenly;
+    }
+    .card {
+        padding: 10px;
+        margin: 10px;
+        width: 400px;
+        border: 2px solid black;
+        border-radius: 10px;
+        box-shadow: 2px 5px 30px black;
+    }
+    img{
+        width: 100%;
+        border-radius: 25px;
+    }
+    h2{
+        color: orange;
+    }
+    span{
+        color: burlywood;
+    }
+    h3{
+        text-align: right;
+        color: aqua;
+    }
+    p{
+        text-align: italic;
+        color: brown;
+    }
+    .card:hover{
+        box-shadow: 2px 5px 40px yellow;
+    }
+    @media (max-width:375px) {
+     #pets { flex-wrap:wrap;}
+
+    }
+
+
+   </style>
+
+    
+</body>
+</html>

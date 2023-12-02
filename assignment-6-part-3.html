@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment qs 3 css</title>
+</head>
+<body>
+    <h1>Loader.....</h1>
+    <div class="loader"></div>
+    <style>
+        .loader{
+            height: 150px;
+            width: 150px;
+            border: 20px solid #f3f3f3;
+            border-radius: 50%;
+            border-top: 20px solid goldenrod;
+            animation: spin 2s linear infinite ;
+        }
+        @keyframes spin {
+            0%{transform:rotate3d(0%);
+            }
+            100%{transform:rotate3d(360%);
+            }
+         }
+    </style>
+    
+</body>
+</html>
